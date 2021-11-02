@@ -6,16 +6,19 @@ contract Counter {
 
     // Function to get the current count
     function get() public view returns (uint) {
-        return count;
+        // write logic to get the current count
+        
     }
 
     // Function to increment count by 1
     function inc() public {
-        count += 1;
+        //write logic to increment the count by 1
+        
     }
 
     // Function to decrement count by 1
     function dec() public {
-        count -= 1;
+        // write logic to decrement the count by 1
+        
     }
 }
