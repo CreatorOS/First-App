@@ -25,7 +25,7 @@ Let's create a function called `get` that returns the value of `count`.
     }
 ```
 
-- `function get() public view returns (uint)` when returning, you must specify the return type under `returns`. If the function doesn't make any modification to any variables in the contract, you can add another modifier called `view`.
+- `function get() public view returns (uint)` when returning, you must specify the return type under `returns`. If the function doesn't make any modification to any variables in the contract, you can add another modifier called `view`. `view` functions don't cost any eth to run - they're free of cost. 
 
 Hit `Run` button to run the test and see the output of the count variable. You should see 0.
 
@@ -47,6 +47,7 @@ Now, let's create a function called `inc` that increments the value of `count` b
           count = count + 1;
       }
   ```
+  This function makes a change to a contract (state) variable. So this cannot be a `view` function. We will have to pay some eth to run this function! 
   Hit `Run` button to run the test and see the output of the count variable. You should see 1.
 
 ## Decrementing counter
