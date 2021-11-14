@@ -1,6 +1,6 @@
 # First Application
 
-In this Quest, we'll create an application to increment or decrement a simple counter and see it's value.
+In this Quest, we'll create an application to increment or decrement a simple counter and see it's value. This will give you a good sense of how data is stored on Ethereum blockchain.
 
 ## Create a counter
 
@@ -25,7 +25,9 @@ Let's create a function called `get` that returns the value of `count`.
     }
 ```
 
-- `function get() public view returns (uint)` when returning, you must specify the return type under `returns`. If the function doesn't make any modification to any variables in the contract, you can add another modifier called `view`. `view` functions don't cost any eth to run - they're free of cost. 
+- For a function that returns a variable , you must specify the return type under `returns`. 
+- If the function doesn't make any modification to any variables in the contract, you can add another modifier called `view`. `view` functions don't cost any eth to run - they're free of cost. 
+- All updates to the variables are stored in the database permanently
 
 Hit `Run` button to run the test and see the output of the count variable. You should see 0.
 
@@ -52,13 +54,8 @@ Now, let's create a function called `inc` that increments the value of `count` b
 
 ## Decrementing counter
 
-Now, let's create a function called `dec` that decrements the value of `count` by 1.
+Now, create a function called `dec` that decrements the value of `count` by 1.
 
-```
-    function dec() public {
-        count -= 1;
-    }
-```
 
 - Notice `inc()` and `dec()` update the variable inside their function body - hence don't have the `view` modifier
 
