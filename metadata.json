@@ -2,13 +2,29 @@
   "version": "1.0.0",
   "defaultFile": "contracts/Counter.sol",
   "environment": "solidity",
-  "setupCommands": ["npm i", "npx hardhat compile"],
+  "setupCommands": [
+    "npx hardhat compile"
+  ],
   "compileCommand": "npx hardhat compile",
   "tests": [
-    { "itShould": "Compile", "command": "sh learn_tests/04.sh" },
-    { "itShould": "Call getCount", "command": "sh learn_tests/05.sh" },
-    { "itShould": "Call incCount", "command": "sh learn_tests/06.sh" },
-    { "itShould": "Call decCount", "command": "sh learn_tests/07.sh" }
+    {
+      "itShould": "Compile",
+      "command": "sh learn_tests/04.sh"
+    },
+    {
+      "itShould": "Call getCount",
+      "command": "sh learn_tests/05.sh"
+    },
+    {
+      "itShould": "Call incCount",
+      "command": "sh learn_tests/06.sh"
+    },
+    {
+      "itShould": "Call decCount",
+      "command": "sh learn_tests/07.sh"
+    }
   ],
-  "learnerAccessibleFileList": ["contracts/*"]
+  "learnerAccessibleFileList": [
+    "contracts/*"
+  ]
 }
